@@ -56,7 +56,7 @@ public class NiftyGetProductData {
         List<String> elements = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(INDIVIDUAL_ITEMS_COUNT))).stream().map(element->element.getText()).collect(Collectors.toList());
 
 
-        for(int j = 1; j <=5; j++) {
+        for(int j = 1; j <= 100; j++) {
             for (int i = 1; i <= elements.size(); i++) {
                 //String text = driver.findElement(By.xpath("//div[contains(@class, 'MuiCardContent-root')]"+"["+i+"]")).getText();
 
